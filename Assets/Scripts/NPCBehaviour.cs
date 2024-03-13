@@ -16,4 +16,10 @@ public class NPCBehaviour : MonoBehaviour
     {
         transform.position += -transform.right * speed * Time.deltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        //todo
+        // have drink and go
+    }
 }
