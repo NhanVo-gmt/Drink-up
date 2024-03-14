@@ -33,7 +33,7 @@ RectTransform:
   m_Children:
   - {fileID: 8238344561575402339}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 8238344560485550688}
   - component: {fileID: 8238344560485550691}
   m_Layer: 5
-  m_Name: StartMenuItemQuitGame_Text
+  m_Name: MenuItem_Text_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 8238344560580222716}
   - component: {fileID: 8238344560580222719}
   m_Layer: 5
-  m_Name: StartMenuItemQuitGame_Btn
+  m_Name: MenuItem_Btn_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 8238344560836736872}
   - component: {fileID: 8238344560836736875}
   m_Layer: 5
-  m_Name: StartMenuItemStartGame_Btn
+  m_Name: MenuItem_Btn_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 8238344560851815933}
   - component: {fileID: 8238344560851815932}
   m_Layer: 5
-  m_Name: StartMenuTitle
+  m_Name: MenuTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 8238344561453480308}
   - component: {fileID: 8238344561453480311}
   m_Layer: 5
-  m_Name: StartMenuItemStartGame_Text
+  m_Name: MenuItem_Text_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -598,7 +598,7 @@ GameObject:
   - component: {fileID: 8238344561575402337}
   - component: {fileID: 8238344561575402336}
   m_Layer: 5
-  m_Name: Panel_StartMenu
+  m_Name: Panel_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
