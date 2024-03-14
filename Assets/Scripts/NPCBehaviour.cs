@@ -21,6 +21,7 @@ public class NPCBehaviour : MonoBehaviour
     {
         if (other.GetComponent<DrinkMovement>())
         {
+            Destroy(other.gameObject);
             Destroy(gameObject);
         }
         else if (other.CompareTag("CustomerEnd"))
