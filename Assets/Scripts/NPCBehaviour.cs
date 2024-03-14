@@ -19,7 +19,18 @@ public class NPCBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //todo
-        // have drink and go
+        if (other.GetComponent<DrinkMovement>())
+        {
+            Destroy(gameObject);
+        }
+        else if (other.CompareTag("CustomerEnd"))
+        {
+            LeaveQueue();
+        }
+    }
+
+    void LeaveQueue()
+    {
+        
     }
 }
