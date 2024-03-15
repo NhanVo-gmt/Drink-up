@@ -7,7 +7,7 @@ public class ScoreSystem : MonoBehaviour
 {
     public GameObject scoreUI;
     private Text m_scoreText;
-private int m_currentScore;
+    private int m_currentScore;
 
     void Start()
     {
@@ -20,5 +20,11 @@ private int m_currentScore;
         m_currentScore += points;
         m_scoreText.text = "";
         m_scoreText.text = m_currentScore.ToString();
+    }
+
+    public void ResetScore()
+    {
+        m_scoreText.text = "0";
+        m_currentScore = 0;
     }
 }

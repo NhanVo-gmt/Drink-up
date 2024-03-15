@@ -5,6 +5,7 @@ using UnityEngine;
 public class LifeSystem : MonoBehaviour
 {
     public GameObject[] lives;
+    public ScoreSystem scoreSystem;
     public int life;
 
     void Start()
@@ -21,6 +22,7 @@ public class LifeSystem : MonoBehaviour
         if (life < 0)
         {
             life = 0;
+            scoreSystem.ResetScore();
             for (int i = 0; i < lives.Length; i++)
             {                
                 lives[i].gameObject.SetActive(true);

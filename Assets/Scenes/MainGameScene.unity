@@ -227,6 +227,7 @@ MonoBehaviour:
   - {fileID: 1214903659}
   - {fileID: 2079727547}
   - {fileID: 1877340882}
+  scoreSystem: {fileID: 35845785}
   life: 5
 --- !u!114 &35845785
 MonoBehaviour:
