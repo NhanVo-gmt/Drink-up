@@ -2,23 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
-    public void Start()
-    {
-        if (this.name == "PauseMenuCanvas")
-        {
-            Transform pauseMenuPanel = transform.Find("Panel_PauseMenu");
-            Transform resumeGameBtn = pauseMenuPanel.transform.Find("PauseMenuItemResumeGame_Btn");
-            if(resumeGameBtn != null){
-                Debug.Log(resumeGameBtn.GetComponent<UI>());
-            }
-        }
-    }
+    Button resumeGameBtn;
 
     public void Update()
     {
@@ -33,11 +24,15 @@ public class Menu : MonoBehaviour
                 PauseGame();
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("GameOverScene");    
+        }
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("MainGameScene");
     }
     public void QuitGame()
     {
