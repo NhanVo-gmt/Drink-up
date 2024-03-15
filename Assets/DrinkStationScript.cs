@@ -30,27 +30,27 @@ public class DrinkStationScript : MonoBehaviour
         {
             // Select item 1
 
-            Debug.Log("Selected Drink: 1");
+            Debug.Log("Selected Drink: Milkshake");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             // Select item 2
 
-            Debug.Log("Selected Drink: 2");
+            Debug.Log("Selected Drink: Smoothie");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             // Select item 3
 
-            Debug.Log("Selected Drink: 3");
+            Debug.Log("Selected Drink: Beer");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             // Select item 4
-            Debug.Log("Selected Drink: 4");
+            Debug.Log("Selected Drink: Cocktail");
             
         }
     }
