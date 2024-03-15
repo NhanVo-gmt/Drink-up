@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class DrinkStationScript : MonoBehaviour
 {
-    [SerializeField] public bool isPlayerInsideVolume; // Flag to check if the player is inside the DrinkStationVolume
-    [SerializeField] public enum SelectedDrink
+    private bool isPlayerInsideVolume; // Flag to check if the player is inside the DrinkStationVolume
+    [SerializeField] public enum DrinkMenu
     {
         None,
         Milkshake,
@@ -14,7 +14,7 @@ public class DrinkStationScript : MonoBehaviour
         Beer,
         Cocktail
     }
-    public SelectedDrink CurrentDrink = SelectedDrink.None; // Variable to store the currently selected item
+    public DrinkMenu CurrentDrink = DrinkMenu.None; // Variable to store the currently selected item
 
     // Start is called before the first frame update
     void Start()
@@ -37,25 +37,25 @@ public class DrinkStationScript : MonoBehaviour
         // Check for input to select items
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            CurrentDrink = SelectedDrink.Milkshake;
+            CurrentDrink = DrinkMenu.Milkshake;
            Debug.Log("Selected Drink: Milkshake");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            CurrentDrink = SelectedDrink.Smoothie;
+            CurrentDrink = DrinkMenu.Smoothie;
             Debug.Log("Selected Drink: Smoothie");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            CurrentDrink = SelectedDrink.Beer;
+            CurrentDrink = DrinkMenu.Beer;
             Debug.Log("Selected Drink: Beer");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            CurrentDrink = SelectedDrink.Cocktail;
+            CurrentDrink = DrinkMenu.Cocktail;
             Debug.Log("Selected Drink: Cocktail");
         }
     }

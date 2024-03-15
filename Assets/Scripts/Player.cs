@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] private DrinkMovement prefab2;
     [SerializeField] private DrinkMovement prefab3;
     [SerializeField] private DrinkMovement prefab4;
-    private DrinkMovement SelectedDrinkPrefab;
+    [SerializeField] private DrinkMovement SelectedDrinkPrefab;
     [SerializeField] private Transform spawnDrinkPos;
 
     void Start()
@@ -54,28 +54,28 @@ public class Player : MonoBehaviour
         if (drinkStation != null)
         {
             // Access the currentItem variable from DrinkStationScript
-            DrinkStationScript.SelectedDrink selectedItem = drinkStation.CurrentDrink;
+            DrinkStationScript.DrinkMenu selectedItem = drinkStation.CurrentDrink;
 
             // Now you can use selectedItem in your logic
             switch (selectedItem)
             {
-                case DrinkStationScript.SelectedDrink.Milkshake:
+                case DrinkStationScript.DrinkMenu.Milkshake:
                     SelectedDrinkPrefab = prefab;
                    // Debug.Log("Milkshake is selected");
                     break;
-                case DrinkStationScript.SelectedDrink.Smoothie:
+                case DrinkStationScript.DrinkMenu.Smoothie:
                     SelectedDrinkPrefab = prefab2;
                     // Debug.Log("Smoothie is selected");
                     break;
-                case DrinkStationScript.SelectedDrink.Beer:
+                case DrinkStationScript.DrinkMenu.Beer:
                     SelectedDrinkPrefab = prefab3;
                     // Debug.Log("Beer is selected");
                     break;
-                case DrinkStationScript.SelectedDrink.Cocktail:
+                case DrinkStationScript.DrinkMenu.Cocktail:
                     SelectedDrinkPrefab = prefab4;
                     //  Debug.Log("Cocktail is selected");
                     break;
-                case DrinkStationScript.SelectedDrink.None:
+                case DrinkStationScript.DrinkMenu.None:
                    // Debug.Log("No drink is selected");
                     break;
             }
