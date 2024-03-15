@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LifeSystem : MonoBehaviour
 {
@@ -21,13 +22,14 @@ public class LifeSystem : MonoBehaviour
     {
         if (life < 0)
         {
-            life = 0;
-            scoreSystem.ResetScore();
-            for (int i = 0; i < lives.Length; i++)
-            {                
-                lives[i].gameObject.SetActive(true);
-                life++;
-            }
+            // life = 0;
+            // scoreSystem.ResetScore();
+            // for (int i = 0; i < lives.Length; i++)
+            // {                
+            //     lives[i].gameObject.SetActive(true);
+            //     life++;
+            // }
+            SceneManager.LoadScene("GameOverScene");
         }
         else if (life < 1)
         {
@@ -53,6 +55,7 @@ public class LifeSystem : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        life -= damage;
+        // if(!pauseMenu.GameIsPaused)
+            life -= damage;
     }
 }

@@ -32,7 +32,7 @@ public class Menu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("MainGameScene");
+        SceneManager.LoadScene("MainGameHUDScene");
     }
     public void QuitGame()
     {
