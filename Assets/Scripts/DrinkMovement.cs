@@ -6,7 +6,7 @@ using UnityEngine;
 public class DrinkMovement : MonoBehaviour
 {
     [SerializeField] float speed = 3.0f;
-    public DrinkStationScript.DrinkMenu drinkType;
+    public DrinkStation.DrinkMenu drinkType;
 
     // Update is called once per frame
     void Update()

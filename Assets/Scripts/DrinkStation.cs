@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
-public class DrinkStationScript : MonoBehaviour
+public class DrinkStation : MonoBehaviour
 {
     private bool isPlayerInsideVolume; // Flag to check if the player is inside the DrinkStationVolume
     [SerializeField] public enum DrinkMenu
@@ -23,7 +23,7 @@ public class DrinkStationScript : MonoBehaviour
       
     }
 
-    // Update is called once per frame
+    Update is called once per frame
     void Update()
     {
         if (isPlayerInsideVolume)
@@ -31,32 +31,37 @@ public class DrinkStationScript : MonoBehaviour
             SelectDrink();
         }
     }
-
+    
     void SelectDrink()
     {
-        // Check for input to select items
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            CurrentDrink = DrinkMenu.Milkshake;
-           Debug.Log("Selected Drink: Milkshake");
-        }
+        // // Check for input to select items
+        // if (Input.GetKeyDown(KeyCode.U))
+        // {
+        //     CurrentDrink = DrinkMenu.Milkshake;
+        //    Debug.Log("Selected Drink: Milkshake");
+        // }
+        //
+        // if (Input.GetKeyDown(KeyCode.I))
+        // {
+        //     CurrentDrink = DrinkMenu.Smoothie;
+        //     Debug.Log("Selected Drink: Smoothie");
+        // }
+        //
+        // if (Input.GetKeyDown(KeyCode.O))
+        // {
+        //     CurrentDrink = DrinkMenu.Beer;
+        //     Debug.Log("Selected Drink: Beer");
+        // }
+        //
+        // if (Input.GetKeyDown(KeyCode.P))
+        // {
+        //     CurrentDrink = DrinkMenu.Cocktail;
+        //     Debug.Log("Selected Drink: Cocktail");
+        // }
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            CurrentDrink = DrinkMenu.Smoothie;
-            Debug.Log("Selected Drink: Smoothie");
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            CurrentDrink = DrinkMenu.Beer;
-            Debug.Log("Selected Drink: Beer");
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            CurrentDrink = DrinkMenu.Cocktail;
-            Debug.Log("Selected Drink: Cocktail");
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCBehaviour : MonoBehaviour
 {
     [SerializeField] private float speed = 3f;
-    public DrinkStationScript.DrinkMenu requestedDrink;
+    public DrinkStation.DrinkMenu requestedDrink;
 
     public SpriteRenderer drinkVisual;
 
@@ -22,7 +22,7 @@ public class NPCBehaviour : MonoBehaviour
 
     private void Start()
     {
-        requestedDrink = (DrinkStationScript.DrinkMenu)Random.Range(1, 5);
+        requestedDrink = (DrinkStation.DrinkMenu)Random.Range(1, 5);
         CreateDrinkVisual();
     }
 
@@ -57,19 +57,19 @@ public class NPCBehaviour : MonoBehaviour
             // Update the sprite of the drink visual based on the requested drink and apply the standard scale
             switch (requestedDrink)
             {
-                case DrinkStationScript.DrinkMenu.Beer:
+                case DrinkStation.DrinkMenu.Beer:
                     drinkVisualRenderer.sprite = beerSprite;
                     drinkVisualRenderer.transform.localScale = standardScale; // Set the standard scale
                     break;
-                case DrinkStationScript.DrinkMenu.Cocktail:
+                case DrinkStation.DrinkMenu.Cocktail:
                     drinkVisualRenderer.sprite = cocktailSprite;
                     drinkVisualRenderer.transform.localScale = standardScale;
                     break;
-                case DrinkStationScript.DrinkMenu.Milkshake:
+                case DrinkStation.DrinkMenu.Milkshake:
                     drinkVisualRenderer.sprite = milkshakeSprite;
                     drinkVisualRenderer.transform.localScale = standardScale;
                     break;
-                case DrinkStationScript.DrinkMenu.Smoothie:
+                case DrinkStation.DrinkMenu.Smoothie:
                     drinkVisualRenderer.sprite = smoothieSprite;
                     drinkVisualRenderer.transform.localScale = standardScale;
                     break;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private DrinkStationScript drinkStation;
+    private DrinkStation drinkStation;
 
     [SerializeField] float step = 2f;
     [SerializeField] public DrinkMovement MilkshakePrefab; 
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        drinkStation = GameObject.FindGameObjectWithTag("Player").GetComponent<DrinkStationScript>();
+        drinkStation = GameObject.FindGameObjectWithTag("Player").GetComponent<DrinkStation>();
         SelectedDrinkPrefab = MilkshakePrefab;
 
     }
@@ -53,30 +53,30 @@ public class Player : MonoBehaviour
     {
         if (drinkStation != null)
         {
-            // Access the CurrentDrink variable from DrinkStationScript
-            DrinkStationScript.DrinkMenu selectedItem = drinkStation.CurrentDrink;
+            // Access the CurrentDrink variable from DrinkStation
+            DrinkStation.DrinkMenu selectedItem = drinkStation.CurrentDrink;
 
             switch (selectedItem)
             {
-                case DrinkStationScript.DrinkMenu.Milkshake:
+                case DrinkStation.DrinkMenu.Milkshake:
                     SelectedDrinkPrefab = MilkshakePrefab;
                     break;
-                case DrinkStationScript.DrinkMenu.Smoothie:
+                case DrinkStation.DrinkMenu.Smoothie:
                     SelectedDrinkPrefab = SmoothiePrefab;
                     break;
-                case DrinkStationScript.DrinkMenu.Beer:
+                case DrinkStation.DrinkMenu.Beer:
                     SelectedDrinkPrefab = BeerPrefab;
                     break;
-                case DrinkStationScript.DrinkMenu.Cocktail:
+                case DrinkStation.DrinkMenu.Cocktail:
                     SelectedDrinkPrefab = Cocktailprefab;
                     break;
-                case DrinkStationScript.DrinkMenu.None:
+                case DrinkStation.DrinkMenu.None:
                     break;
             }
         }
         else
         {
-            Debug.LogWarning("DrinkStationScript component not found on the player GameObject.");
+            Debug.LogWarning("DrinkStation component not found on the player GameObject.");
         }
     }
 }
