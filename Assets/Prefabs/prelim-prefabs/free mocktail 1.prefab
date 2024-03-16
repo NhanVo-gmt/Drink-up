@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4796113561314375328}
   m_Layer: 0
   m_Name: free mocktail 1
-  m_TagString: Untagged
+  m_TagString: Cocktail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &470508085143368263
 SpriteRenderer:
@@ -142,5 +142,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 19.2, y: 19.2}
+  m_Size: {x: 16.48, y: 19.2}
   m_EdgeRadius: 0
