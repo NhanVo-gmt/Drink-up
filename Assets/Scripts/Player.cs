@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         drinkStation = GameObject.FindGameObjectWithTag("Player").GetComponent<DrinkStationScript>();
+        SelectedDrinkPrefab = prefab;
 
     }
 
