@@ -35,25 +35,25 @@ public class DrinkStationScript : MonoBehaviour
     void SelectDrink()
     {
         // Check for input to select items
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             CurrentDrink = DrinkMenu.Milkshake;
            Debug.Log("Selected Drink: Milkshake");
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             CurrentDrink = DrinkMenu.Smoothie;
             Debug.Log("Selected Drink: Smoothie");
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             CurrentDrink = DrinkMenu.Beer;
             Debug.Log("Selected Drink: Beer");
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             CurrentDrink = DrinkMenu.Cocktail;
             Debug.Log("Selected Drink: Cocktail");
