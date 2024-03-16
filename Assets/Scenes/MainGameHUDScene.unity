@@ -652,7 +652,7 @@ GameObject:
   - component: {fileID: 703072753}
   - component: {fileID: 703072752}
   m_Layer: 0
-  m_Name: Drink-End (1)
+  m_Name: DrinkEnd
   m_TagString: DrinkEnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
