@@ -244,6 +244,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8847887296550836047, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1922532629}
+    - targetCorrespondingSourceObject: {fileID: 8847887296550836047, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1922532633}
   m_SourcePrefab: {fileID: 100100000, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
 --- !u!1 &54873881
 GameObject:
@@ -4928,6 +4931,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1922532633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922532620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222a71be00d102541862053727943a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 2126106707}
 --- !u!1 &1925178716
 GameObject:
   m_ObjectHideFlags: 0
@@ -5283,6 +5299,11 @@ Transform:
   m_Father: {fileID: 1677969267}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2126106707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8238344560238757603, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
+  m_PrefabInstance: {fileID: 2031762844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1769488010900256575
 PrefabInstance:
   m_ObjectHideFlags: 0
