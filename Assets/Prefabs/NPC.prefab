@@ -100,6 +100,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  requestedDrink: 0
+  drinkVisual: {fileID: 4241376804041706032}
+  beerSprite: {fileID: 21300000, guid: b97fe968005b99a41a2669fff3a2cec9, type: 3}
+  cocktailSprite: {fileID: 21300000, guid: e2d81c8add9fdbc48b2c78fb5a6be9b8, type: 3}
+  milkshakeSprite: {fileID: 21300000, guid: 09e16fe09bb4dec44b1b3b8ab756c088, type: 3}
+  smoothieSprite: {fileID: 21300000, guid: 1f04f92358345fd469fbfb7ed33183df, type: 3}
+  drinkVisualOffset: {x: 0, y: 1, z: 0}
+  drinkHolderPrefab: {fileID: 8585186324195322160, guid: ad6d4e9040b9b1b4dbf4243c1c5cae35, type: 3}
 --- !u!61 &9085380986209888545
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -44,9 +44,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //the prefab is updated here by the DrinkSelection() function below
-            //depending on the state of the enum in the DrinkStationScript
-            Instantiate(SelectedDrinkPrefab, spawnDrinkPos.position, Quaternion.identity);
+            DrinkMovement newDrink = Instantiate(SelectedDrinkPrefab, spawnDrinkPos.position, Quaternion.identity).GetComponent<DrinkMovement>();
+            newDrink.drinkType = drinkStation.CurrentDrink; // Set the type of the drink
         }
     }
 

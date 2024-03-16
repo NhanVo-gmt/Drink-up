@@ -6,6 +6,7 @@ using UnityEngine;
 public class DrinkMovement : MonoBehaviour
 {
     [SerializeField] float speed = 3.0f;
+    public DrinkStationScript.DrinkMenu drinkType;
 
     // Update is called once per frame
     void Update()
@@ -20,15 +21,9 @@ public class DrinkMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("DrinkEnd"))
+        if (other.CompareTag("Barrier"))
         {
-            Broken();
+            Destroy(gameObject);
         }
-        
-    }
-
-    void Broken()
-    {
-        //todo
     }
 }

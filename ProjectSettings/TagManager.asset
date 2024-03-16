@@ -10,6 +10,7 @@ TagManager:
   - Milkshake
   - Beer
   - Cocktail
+  - Barrier
   layers:
   - Default
   - TransparentFX
