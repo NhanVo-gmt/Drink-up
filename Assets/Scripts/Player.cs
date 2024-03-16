@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     private DrinkStationScript drinkStation;
 
     [SerializeField] float step = 2f;
-    [SerializeField] private DrinkMovement prefab;
+    [SerializeField] public DrinkMovement prefab; 
     [SerializeField] private DrinkMovement prefab2;
     [SerializeField] private DrinkMovement prefab3;
     [SerializeField] private DrinkMovement prefab4;
@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
         {
             //when we have prefabs for the drink sprites we can just change it from prefab here to the SelectedDrinkPrefab variable
             //that is set in the DrinkSelection function below.
-            Instantiate(prefab, spawnDrinkPos.position, Quaternion.identity);
+            Instantiate(SelectedDrinkPrefab, spawnDrinkPos.position, Quaternion.identity);
         }
     }
 
