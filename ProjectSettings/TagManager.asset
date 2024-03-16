@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DrinkStation
+  - DrinkStationVolume
+  - Smoothie
+  - Milkshake
+  - Beer
+  - Cocktail
   layers:
   - Default
   - TransparentFX
