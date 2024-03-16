@@ -7,17 +7,17 @@ public class Player : MonoBehaviour
     private DrinkStationScript drinkStation;
 
     [SerializeField] float step = 2f;
-    [SerializeField] public DrinkMovement prefab; 
-    [SerializeField] private DrinkMovement prefab2;
-    [SerializeField] private DrinkMovement prefab3;
-    [SerializeField] private DrinkMovement prefab4;
+    [SerializeField] public DrinkMovement MilkshakePrefab; 
+    [SerializeField] private DrinkMovement SmoothiePrefab;
+    [SerializeField] private DrinkMovement BeerPrefab;
+    [SerializeField] private DrinkMovement Cocktailprefab;
     [SerializeField] private DrinkMovement SelectedDrinkPrefab;
     [SerializeField] private Transform spawnDrinkPos;
 
     void Start()
     {
         drinkStation = GameObject.FindGameObjectWithTag("Player").GetComponent<DrinkStationScript>();
-        SelectedDrinkPrefab = prefab;
+        SelectedDrinkPrefab = MilkshakePrefab;
 
     }
 
@@ -60,16 +60,16 @@ public class Player : MonoBehaviour
             switch (selectedItem)
             {
                 case DrinkStationScript.DrinkMenu.Milkshake:
-                    SelectedDrinkPrefab = prefab;
+                    SelectedDrinkPrefab = MilkshakePrefab;
                     break;
                 case DrinkStationScript.DrinkMenu.Smoothie:
-                    SelectedDrinkPrefab = prefab2;
+                    SelectedDrinkPrefab = SmoothiePrefab;
                     break;
                 case DrinkStationScript.DrinkMenu.Beer:
-                    SelectedDrinkPrefab = prefab3;
+                    SelectedDrinkPrefab = BeerPrefab;
                     break;
                 case DrinkStationScript.DrinkMenu.Cocktail:
-                    SelectedDrinkPrefab = prefab4;
+                    SelectedDrinkPrefab = Cocktailprefab;
                     break;
                 case DrinkStationScript.DrinkMenu.None:
                     break;
