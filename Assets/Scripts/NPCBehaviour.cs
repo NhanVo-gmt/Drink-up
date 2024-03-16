@@ -21,8 +21,7 @@ public class NPCBehaviour : MonoBehaviour
     {
         if (other.GetComponent<DrinkMovement>())
         {
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+            GetDrink(other);
         }
         else if (other.CompareTag("CustomerEnd"))
         {
@@ -30,8 +29,23 @@ public class NPCBehaviour : MonoBehaviour
         }
     }
 
+    void GetDrink(Collider2D other)
+    {
+        if (isRightDrink())
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+    }
+
+    bool isRightDrink()
+    {
+        return true;
+    }
+
     void LeaveQueue()
     {
-        
+        Destroy(gameObject);
+        //todo minus point
     }
 }

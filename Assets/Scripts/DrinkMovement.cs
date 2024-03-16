@@ -29,6 +29,7 @@ public class DrinkMovement : MonoBehaviour
 
     void Broken()
     {
-        //todo
+        Destroy(gameObject);
+        //todo minus point
     }
 }
