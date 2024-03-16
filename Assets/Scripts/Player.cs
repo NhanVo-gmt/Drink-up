@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
-    private DrinkStation drinkStation;
+    [Header("Drink")]
+    [SerializeField] public DrinkStation drinkStation;
+    [SerializeField] public DrinkStation.DrinkMenu drinkMenu;
 
+    [Header("Movement")]
     [SerializeField] float step = 2f;
     [SerializeField] public DrinkMovement MilkshakePrefab; 
     [SerializeField] private DrinkMovement SmoothiePrefab;
@@ -16,9 +20,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        drinkStation = GameObject.FindGameObjectWithTag("Player").GetComponent<DrinkStation>();
         SelectedDrinkPrefab = MilkshakePrefab;
-
     }
 
     void Update()
@@ -45,18 +47,20 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             DrinkMovement newDrink = Instantiate(SelectedDrinkPrefab, spawnDrinkPos.position, Quaternion.identity).GetComponent<DrinkMovement>();
-            newDrink.drinkType = drinkStation.CurrentDrink; // Set the type of the drink
+            newDrink.drinkType = drinkMenu; // Set the type of the drink
         }
     }
 
     void DrinkSelection()
     {
+        if (!Input.GetKeyDown(KeyCode.E)) return;
+        
         if (drinkStation != null)
         {
             // Access the CurrentDrink variable from DrinkStation
-            DrinkStation.DrinkMenu selectedItem = drinkStation.CurrentDrink;
+            drinkMenu = drinkStation.CurrentDrink;
 
-            switch (selectedItem)
+            switch (drinkMenu)
             {
                 case DrinkStation.DrinkMenu.Milkshake:
                     SelectedDrinkPrefab = MilkshakePrefab;

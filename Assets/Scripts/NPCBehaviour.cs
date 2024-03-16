@@ -92,7 +92,7 @@ public class NPCBehaviour : MonoBehaviour
         if (drink != null)
         {
             // Compare the drink type with the NPC's requested drink type
-            if (drink.drinkType == this.requestedDrink)
+            if (drink.drinkType == requestedDrink)
             {
                 // The drinks match, so destroy both the drink and the NPC
                 Destroy(drink.gameObject);

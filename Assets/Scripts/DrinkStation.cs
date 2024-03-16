@@ -16,6 +16,8 @@ public class DrinkStation : MonoBehaviour
     }
     public DrinkMenu CurrentDrink = DrinkMenu.None; // Variable to store the currently selected item
 
+    public Player player = null;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,6 @@ public class DrinkStation : MonoBehaviour
       
     }
 
-    Update is called once per frame
     void Update()
     {
         if (isPlayerInsideVolume)
@@ -37,54 +38,42 @@ public class DrinkStation : MonoBehaviour
         // // Check for input to select items
         // if (Input.GetKeyDown(KeyCode.U))
         // {
-        //     CurrentDrink = DrinkMenu.Milkshake;
+        //     CurrentDrink = DrinkStation.Milkshake;
         //    Debug.Log("Selected Drink: Milkshake");
         // }
         //
         // if (Input.GetKeyDown(KeyCode.I))
         // {
-        //     CurrentDrink = DrinkMenu.Smoothie;
+        //     CurrentDrink = DrinkStation.Smoothie;
         //     Debug.Log("Selected Drink: Smoothie");
         // }
         //
         // if (Input.GetKeyDown(KeyCode.O))
         // {
-        //     CurrentDrink = DrinkMenu.Beer;
+        //     CurrentDrink = DrinkStation.Beer;
         //     Debug.Log("Selected Drink: Beer");
         // }
         //
         // if (Input.GetKeyDown(KeyCode.P))
         // {
-        //     CurrentDrink = DrinkMenu.Cocktail;
+        //     CurrentDrink = DrinkStation.Cocktail;
         //     Debug.Log("Selected Drink: Cocktail");
         // }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            
-        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("DrinkStationVolume"))
+        if (collision.TryGetComponent<Player>(out Player player))
         {
-            isPlayerInsideVolume = true;
+            player.drinkStation = this;
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("DrinkStationVolume"))
-        {
-            isPlayerInsideVolume = true;
-        }
-    }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("DrinkStationVolume"))
-        {
-            isPlayerInsideVolume = false;
-        }
+        // if (collision.GetComponent<Player>())
+        // {
+        //     this.player = null;
+        // }
     }
 }
 

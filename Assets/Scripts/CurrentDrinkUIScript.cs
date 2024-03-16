@@ -10,21 +10,21 @@ public class CurrentDrinkUIScript : MonoBehaviour
     [SerializeField] public Sprite Smoothie;
     [SerializeField] public Sprite Beer;
     [SerializeField] public Sprite Cocktail;
-     private DrinkStation drinkStation;
+     private DrinkStation m_DrinkStation;
 
     // Start is called before the first frame update
     void Start()
     {
-        drinkStation = GameObject.FindGameObjectWithTag("Player").GetComponent<DrinkStation>();
+        m_DrinkStation = GameObject.FindGameObjectWithTag("Player").GetComponent<DrinkStation>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (drinkStation != null)
+        if (m_DrinkStation != null)
         {
             // Access the CurrentDrink variable from DrinkStation
-            DrinkStation.DrinkMenu selectedItem = drinkStation.CurrentDrink;
+            DrinkStation.DrinkMenu selectedItem = m_DrinkStation.CurrentDrink;
 
             switch (selectedItem)
             {
