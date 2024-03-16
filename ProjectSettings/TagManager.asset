@@ -12,6 +12,8 @@ TagManager:
   - Cocktail
   - Barrier
   - NPCBarrier
+  - CustomerEnd
+  - DrinkEnd
   layers:
   - Default
   - TransparentFX
