@@ -15,6 +15,7 @@ TagManager:
   - CustomerEnd
   - DrinkEnd
   - Score
+  - Customer
   layers:
   - Default
   - TransparentFX
