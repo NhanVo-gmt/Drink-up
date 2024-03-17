@@ -13,7 +13,7 @@ public class Menu : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) || Input.GetMouseButtonDown(0))
         {
             if (GameIsPaused)
             {
@@ -40,12 +40,14 @@ public class Menu : MonoBehaviour
     }
     public void ResumeGame()
     {
+        Debug.Log("Game resumed!");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
     public void PauseGame()
     {
+        Debug.Log("Game paused!");
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
