@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource1;
     [SerializeField] private AudioSource audioSource2;
+    [SerializeField] private AudioSource audioSource3;
 
     void Start()
     {
@@ -58,6 +59,7 @@ public class Player : MonoBehaviour
             newDrink.drinkType = drinkMenu; // Set the type of the drink
 
            audioSource2.Play();
+           audioSource3.Play();
         }
     }
 
