@@ -12,13 +12,14 @@ GameObject:
   - component: {fileID: 8238344560238757606}
   - component: {fileID: 8238344560238757601}
   - component: {fileID: 8238344560238757600}
+  - component: {fileID: 2126106708}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8238344560238757607
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33,7 +34,7 @@ RectTransform:
   m_Children:
   - {fileID: 8238344561575402339}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -102,6 +103,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2126106708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8238344560238757603}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222a71be00d102541862053727943a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 8238344560238757603}
 --- !u!1 &8238344560485550717
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,7 +128,7 @@ GameObject:
   - component: {fileID: 8238344560485550688}
   - component: {fileID: 8238344560485550691}
   m_Layer: 5
-  m_Name: MenuItem_Text_1
+  m_Name: PauseMenuItemQuitGame_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,7 +209,7 @@ GameObject:
   - component: {fileID: 8238344560580222716}
   - component: {fileID: 8238344560580222719}
   m_Layer: 5
-  m_Name: MenuItem_Btn_2
+  m_Name: PauseMenuItemQuitGame_Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,7 +317,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8238344560580222716}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2126106708}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8238344560836736869
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +343,7 @@ GameObject:
   - component: {fileID: 8238344560836736872}
   - component: {fileID: 8238344560836736875}
   m_Layer: 5
-  m_Name: MenuItem_Btn_1
+  m_Name: PauseMenuItemResumeGame_Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +451,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8238344560836736872}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2126106708}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8238344560851815934
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +476,7 @@ GameObject:
   - component: {fileID: 8238344560851815933}
   - component: {fileID: 8238344560851815932}
   m_Layer: 5
-  m_Name: MenuTitle
+  m_Name: PauseMenuTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -505,7 +543,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: DRINK <color=#ffd700>UP!</color>
+  m_Text: <color=#ffd700>PAUSED</color>
 --- !u!1 &8238344561453480305
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +556,7 @@ GameObject:
   - component: {fileID: 8238344561453480308}
   - component: {fileID: 8238344561453480311}
   m_Layer: 5
-  m_Name: MenuItem_Text_1
+  m_Name: PauseMenuItemResumeGame_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -585,7 +623,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START
+  m_Text: RESUME
 --- !u!1 &8238344561575402338
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +636,7 @@ GameObject:
   - component: {fileID: 8238344561575402337}
   - component: {fileID: 8238344561575402336}
   m_Layer: 5
-  m_Name: Panel_Menu
+  m_Name: Panel_PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
