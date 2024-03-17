@@ -7,6 +7,12 @@ public class DrinkMovement : MonoBehaviour
 {
     [SerializeField] float speed = 3.0f;
     public DrinkStation.DrinkMenu drinkType;
+    public LifeSystem lifeSystem;
+
+    void Start()
+    {
+        lifeSystem = GameObject.FindGameObjectWithTag("Player").GetComponent<LifeSystem>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,6 +30,7 @@ public class DrinkMovement : MonoBehaviour
         if (other.CompareTag("Barrier"))
         {
             Destroy(gameObject);
+            lifeSystem.TakeDamage(1);
         }
     }
 }
