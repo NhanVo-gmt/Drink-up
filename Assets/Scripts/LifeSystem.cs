@@ -31,23 +31,23 @@ public class LifeSystem : MonoBehaviour
             // }
             SceneManager.LoadScene("GameOverScene");
         }
-        else if (life < 1)
+        else if (life == 0)
         {
-         //   lives[0].gameObject.SetActive(false);
+            lives[0].gameObject.SetActive(false);
         }
-        else if (life < 2)
+        else if (life == 1)
         {
             lives[1].gameObject.SetActive(false);
         }
-        else if (life < 3)
+        else if (life == 2)
         {
             lives[2].gameObject.SetActive(false);
         }
-        else if (life < 4)
+        else if (life == 3)
         {
             lives[3].gameObject.SetActive(false);
         }
-        else if (life < 5)
+        else if (life == 4)
         {
             lives[4].gameObject.SetActive(false);
         }
@@ -56,6 +56,7 @@ public class LifeSystem : MonoBehaviour
     public void TakeDamage(int damage)
     {
         // if(!pauseMenu.GameIsPaused)
-            life -= damage;
+          //  life -= damage;
+            life -= 1;
     }
 }

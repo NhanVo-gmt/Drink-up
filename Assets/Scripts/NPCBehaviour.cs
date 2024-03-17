@@ -21,13 +21,15 @@ public class NPCBehaviour : MonoBehaviour
     public GameObject drinkHolderPrefab;
 
     public ScoreSystem scoreSystem;
-    public Player player;
+    //public Player player;
+    public LifeSystem lifeSystem;
 
     private void Start()
     {
         requestedDrink = (DrinkStation.DrinkMenu)Random.Range(1, 5);
         CreateDrinkVisual();
         scoreSystem = GameObject.FindGameObjectWithTag("Player").GetComponent<ScoreSystem>();
+        lifeSystem = GameObject.FindGameObjectWithTag("Player").GetComponent<LifeSystem>();
     }
 
     private void Update()
@@ -126,6 +128,7 @@ public class NPCBehaviour : MonoBehaviour
         {
             // Other functionality for when an NPC hits a barrier
             Destroy(gameObject);
+            lifeSystem.TakeDamage(1);
         }
     }
 }
