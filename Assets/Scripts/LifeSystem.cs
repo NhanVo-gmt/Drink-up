@@ -33,7 +33,7 @@ public class LifeSystem : MonoBehaviour
         }
         else if (life < 1)
         {
-            lives[0].gameObject.SetActive(false);
+         //   lives[0].gameObject.SetActive(false);
         }
         else if (life < 2)
         {

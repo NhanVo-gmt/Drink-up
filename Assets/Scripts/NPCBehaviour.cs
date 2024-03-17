@@ -20,10 +20,14 @@ public class NPCBehaviour : MonoBehaviour
 
     public GameObject drinkHolderPrefab;
 
+    public ScoreSystem scoreSystem;
+    public Player player;
+
     private void Start()
     {
         requestedDrink = (DrinkStation.DrinkMenu)Random.Range(1, 5);
         CreateDrinkVisual();
+        scoreSystem = GameObject.FindGameObjectWithTag("Player").GetComponent<ScoreSystem>();
     }
 
     private void Update()
@@ -97,6 +101,24 @@ public class NPCBehaviour : MonoBehaviour
                 // The drinks match, so destroy both the drink and the NPC
                 Destroy(drink.gameObject);
                 Destroy(gameObject);
+
+                // Add scores depending on which drink was matched
+                if (requestedDrink == DrinkStation.DrinkMenu.Milkshake)
+                {
+                    scoreSystem.AddPoints(100);
+                }
+                if (requestedDrink == DrinkStation.DrinkMenu.Smoothie)
+                {
+                    scoreSystem.AddPoints(200);
+                }
+                if (requestedDrink == DrinkStation.DrinkMenu.Beer)
+                {
+                    scoreSystem.AddPoints(300);
+                }
+                if (requestedDrink == DrinkStation.DrinkMenu.Cocktail)
+                {
+                    scoreSystem.AddPoints(400);
+                }
             }
             // If they don't match, do nothing, allowing them to pass through each other
         }
