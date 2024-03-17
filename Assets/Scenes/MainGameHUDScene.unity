@@ -240,13 +240,19 @@ PrefabInstance:
       addedObject: {fileID: 1922532624}
     - targetCorrespondingSourceObject: {fileID: 8847887296550836047, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1922532633}
+    - targetCorrespondingSourceObject: {fileID: 8847887296550836047, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1922532635}
+    - targetCorrespondingSourceObject: {fileID: 8847887296550836047, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1922532634}
+    - targetCorrespondingSourceObject: {fileID: 8847887296550836047, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1922532625}
     - targetCorrespondingSourceObject: {fileID: 8847887296550836047, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1922532629}
-    - targetCorrespondingSourceObject: {fileID: 8847887296550836047, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1922532633}
   m_SourcePrefab: {fileID: 100100000, guid: f70c3b804dcc0d6499d38abf02bf8045, type: 3}
 --- !u!1 &54873881
 GameObject:
@@ -4946,6 +4952,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 2126106707}
+--- !u!114 &1922532634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922532620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80124589de244c840a493bf92a7531b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreUI: {fileID: 0}
+--- !u!114 &1922532635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922532620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaa80e32f6008a4f91b83f32cf2cd29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: []
+  scoreSystem: {fileID: 0}
+  life: 0
 --- !u!1 &1925178716
 GameObject:
   m_ObjectHideFlags: 0
