@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartMenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8238344560238757603, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8238344560238757607, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -580,6 +584,14 @@ PrefabInstance:
     - target: {fileID: 8238344560836736875, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560851815932, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
+      propertyPath: m_Text
+      value: <color=#ffd700>Drink up!</color>
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344561453480311, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
+      propertyPath: m_Text
+      value: Start
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

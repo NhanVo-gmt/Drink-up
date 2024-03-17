@@ -13,11 +13,12 @@ public class Menu : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1.0f;
     }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
             {
@@ -27,10 +28,6 @@ public class Menu : MonoBehaviour
             {
                 PauseGame();
             }
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("GameOverScene");
         }
     }
 
@@ -44,21 +41,15 @@ public class Menu : MonoBehaviour
     }
     public void ResumeGame()
     {
-        if (pauseMenuUI != null)
-        {
-            pauseMenuUI.SetActive(false);
-            Time.timeScale = 1f;
-            GameIsPaused = false;
-        }
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
     }
     public void PauseGame()
     {
-        if (pauseMenuUI != null)
-        {
-            pauseMenuUI.SetActive(true);
-            Time.timeScale = 0f;
-            GameIsPaused = true;
-        }
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
     }
 
     public void Back()

@@ -291,6 +291,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8238344560238757601, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560238757601, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560238757601, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560238757601, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 8238344560238757603, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_Name
       value: InstructionsCanvas
@@ -379,9 +395,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8238344560485550690, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560485550690, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560485550690, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560485550690, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000022888184
+      objectReference: {fileID: 0}
     - target: {fileID: 8238344560485550691, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_Text
       value: BACK
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560485550691, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 139
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560485550691, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560485550691, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8238344560580222718, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -392,8 +436,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8238344560580222718, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 479.8076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560580222718, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 79.519
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560580222718, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000095367
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560580222718, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8238344560580222719, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -428,8 +484,12 @@ PrefabInstance:
       value: <color=#ffd700>INSTRUCTIONS</color>
       objectReference: {fileID: 0}
     - target: {fileID: 8238344560851815932, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560851815932, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 84
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 8238344560851815935, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -440,8 +500,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8238344560851815935, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 704.9712
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560851815935, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 183.0857
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560851815935, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000046849
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344560851815935, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -120
+      value: -183.09
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561453480305, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_Name
@@ -449,49 +521,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561453480310, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1200
+      value: 1485.0693
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561453480310, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 750
+      value: 641.0609
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344561453480310, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000050545
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344561453480310, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561453480311, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_Text
-      value: 'move the character up and down with the <color=#ffd700>wasd</color>
-        keys
+      value: 'move the character up and down with the <color=#ffd700>ws</color> keys
 
-        press the e key at one of the four <color=#ffd700>drink stations</color>
-        to the left to pour that drink
+        press
+        the e key at one of the four <color=#ffd700>drink stations</color> to the
+        left to pour that drink
 
-        press the <color=#ffd700>space</color>
-        key to slide the drink down the bar to the right toward the oncoming customers
+        press the <color=#ffd700>space</color> key
+        to slide the drink down the bar to the right toward the oncoming customers
 
         if
         the drink you serve <color=#ffd700>does</color> match the customer''s order
         you will be awarded <color=#ffd700>points!</color>
 
         (milshake = <color=#ffd700>100</color>,
-        smoothie = <color=#ffd700>200</color>, beer = <color=#ffd700>300</color>
-        & smoothie = <color=#ffd700>400</color>)
+        smoothie = <color=#ffd700>200</color>, beer = <color=#ffd700>300</color>,
+        cocktail = <color=#ffd700>400</color>)
 
-        but be careful, if the
-        drink you serve <color=#ffd700>does not</color> match the customer''s <color=#ffd700>order</color>
-        (above each customer), they will <color=#ffd700>reject it!</color>
+        but be careful, if the drink
+        you serve <color=#ffd700>does not</color> match the customer''s <color=#ffd700>order</color>
+        (above each customer), they will <color=#ffd700>ignore it!</color>
+
+        If
+        the incorrect drink reaches the end of the bar, you will lose a life
 
         if
-        a customer reaches the <color=#ffd700>end of a bar</color>, you will lose
+        a customer gets to the <color=#ffd700>end of the bar</color>, you will lose
         a <color=#ffd700>life</color>
 
         when you <color=#ffd700>lose all</color>
         of your <color=#ffd700>lives</color>, it''s <color=#ffd700>game over!</color>'
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561453480311, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344561453480311, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_FontData.m_MinSize
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561453480311, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 45
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561453480311, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_FontData.m_Alignment
@@ -511,11 +598,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561575402339, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1280
+      value: 1596
       objectReference: {fileID: 0}
     - target: {fileID: 8238344561575402339, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 950
+      value: 898
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344561575402339, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238344561575402339, guid: 68a0fc00cd3c21c4496d474682a6c8b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00051116943
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
