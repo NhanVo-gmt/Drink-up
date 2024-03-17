@@ -60,14 +60,4 @@ public class Menu : MonoBehaviour
             GameIsPaused = true;
         }
     }
-
-    public void Back()
-    {
-        SceneManager.LoadScene("StartScene");        
-    }
-
-    public void Instructions()
-    {
-        SceneManager.LoadScene("InstructionsScene");
-    }
 }
