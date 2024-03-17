@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCBehaviour : MonoBehaviour
 {
-    [SerializeField] private float speed = 3f;
+    [SerializeField] private float speed = 1.5f;
     public DrinkStation.DrinkMenu requestedDrink;
 
     public SpriteRenderer drinkVisual;
@@ -23,6 +23,7 @@ public class NPCBehaviour : MonoBehaviour
     public ScoreSystem scoreSystem;
     //public Player player;
     public LifeSystem lifeSystem;
+   // [SerializeField] private AudioSource audioSource;
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class NPCBehaviour : MonoBehaviour
         CreateDrinkVisual();
         scoreSystem = GameObject.FindGameObjectWithTag("Player").GetComponent<ScoreSystem>();
         lifeSystem = GameObject.FindGameObjectWithTag("Player").GetComponent<LifeSystem>();
+       
     }
 
     private void Update()
@@ -108,18 +110,23 @@ public class NPCBehaviour : MonoBehaviour
                 if (requestedDrink == DrinkStation.DrinkMenu.Milkshake)
                 {
                     scoreSystem.AddPoints(100);
+
                 }
                 if (requestedDrink == DrinkStation.DrinkMenu.Smoothie)
                 {
                     scoreSystem.AddPoints(200);
+
                 }
                 if (requestedDrink == DrinkStation.DrinkMenu.Beer)
                 {
                     scoreSystem.AddPoints(300);
+                
                 }
                 if (requestedDrink == DrinkStation.DrinkMenu.Cocktail)
                 {
                     scoreSystem.AddPoints(400);
+                  
+
                 }
             }
             // If they don't match, do nothing, allowing them to pass through each other
@@ -131,4 +138,6 @@ public class NPCBehaviour : MonoBehaviour
             lifeSystem.TakeDamage(1);
         }
     }
+
+
 }

@@ -19,9 +19,17 @@ public class Player : MonoBehaviour
     [SerializeField] private DrinkMovement SelectedDrinkPrefab;
     [SerializeField] private Transform spawnDrinkPos;
     public DrinkMenu CurrentDrink = DrinkMenu.None;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource1;
+    [SerializeField] private AudioSource audioSource2;
+    [SerializeField] private AudioSource audioSource3;
+
     void Start()
     {
         SelectedDrinkPrefab = MilkshakePrefab;
+      //  audioSource1 = GetComponent<AudioSource>();
+      //  audioSource2 = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -49,6 +57,9 @@ public class Player : MonoBehaviour
         {
             DrinkMovement newDrink = Instantiate(SelectedDrinkPrefab, spawnDrinkPos.position, Quaternion.identity).GetComponent<DrinkMovement>();
             newDrink.drinkType = drinkMenu; // Set the type of the drink
+
+           audioSource2.Play();
+           audioSource3.Play();
         }
     }
 
@@ -66,18 +77,22 @@ public class Player : MonoBehaviour
                 case DrinkStation.DrinkMenu.Milkshake:
                     SelectedDrinkPrefab = MilkshakePrefab;
                     CurrentDrink = DrinkMenu.Milkshake;
+                    audioSource1.Play();
                     break;
                 case DrinkStation.DrinkMenu.Smoothie:
                     SelectedDrinkPrefab = SmoothiePrefab;
                     CurrentDrink = DrinkMenu.Smoothie;
+                    audioSource1.Play();
                     break;
                 case DrinkStation.DrinkMenu.Beer:
                     SelectedDrinkPrefab = BeerPrefab;
                     CurrentDrink = DrinkMenu.Beer;
+                    audioSource1.Play();
                     break;
                 case DrinkStation.DrinkMenu.Cocktail:
                     SelectedDrinkPrefab = Cocktailprefab;
                     CurrentDrink = DrinkMenu.Cocktail;
+                    audioSource1.Play();
                     break;
                 case DrinkStation.DrinkMenu.None:
                     break;
