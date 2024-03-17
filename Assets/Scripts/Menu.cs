@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             if (GameIsPaused)
             {
@@ -59,5 +59,15 @@ public class Menu : MonoBehaviour
             Time.timeScale = 0f;
             GameIsPaused = true;
         }
+    }
+
+    public void Instructions()
+    {
+        SceneManager.LoadScene("InstructionsScene");
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 }
