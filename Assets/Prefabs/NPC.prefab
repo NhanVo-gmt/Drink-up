@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58e1741c546cd5d41b53d74017491ad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 1.5
   requestedDrink: 0
   drinkVisual: {fileID: 4241376804041706032}
   beerSprite: {fileID: 21300000, guid: b97fe968005b99a41a2669fff3a2cec9, type: 3}

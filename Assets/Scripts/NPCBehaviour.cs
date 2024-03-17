@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCBehaviour : MonoBehaviour
 {
-    [SerializeField] private float speed = 3f;
+    [SerializeField] private float speed = 1.5f;
     public DrinkStation.DrinkMenu requestedDrink;
 
     public SpriteRenderer drinkVisual;
