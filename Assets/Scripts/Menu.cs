@@ -11,9 +11,13 @@ public class Menu : MonoBehaviour
 
     Button resumeGameBtn;
 
+    void Start()
+    {
+    }
+
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) || Input.GetMouseButtonDown(0))
         {
             if (GameIsPaused)
             {
@@ -26,7 +30,7 @@ public class Menu : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("GameOverScene");    
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 
@@ -40,14 +44,30 @@ public class Menu : MonoBehaviour
     }
     public void ResumeGame()
     {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
+        if (pauseMenuUI != null)
+        {
+            pauseMenuUI.SetActive(false);
+            Time.timeScale = 1f;
+            GameIsPaused = false;
+        }
     }
     public void PauseGame()
     {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
+        if (pauseMenuUI != null)
+        {
+            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+            GameIsPaused = true;
+        }
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("StartScene");        
+    }
+
+    public void Instructions()
+    {
+        SceneManager.LoadScene("InstructionsScene");
     }
 }
