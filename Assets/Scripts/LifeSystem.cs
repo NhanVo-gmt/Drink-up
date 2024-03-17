@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LifeSystem : MonoBehaviour
 {
     public GameObject[] lives;
-    public ScoreSystem scoreSystem;
+   // public ScoreSystem scoreSystem;
     public int life;
 
     void Start()
