@@ -5334,7 +5334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8238344560238757603, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8238344560238757607, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       propertyPath: m_Pivot.x
@@ -5439,7 +5439,7 @@ PrefabInstance:
     - target: {fileID: 8238344560580222719, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2126106712}
+      objectReference: {fileID: 2126106708}
     - target: {fileID: 8238344560580222719, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -5471,7 +5471,7 @@ PrefabInstance:
     - target: {fileID: 8238344560836736875, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2126106712}
+      objectReference: {fileID: 2126106708}
     - target: {fileID: 8238344560836736875, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -5508,13 +5508,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 8238344561575402338, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8238344560238757603, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2126106712}
+      addedObject: {fileID: 2126106708}
   m_SourcePrefab: {fileID: 100100000, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
 --- !u!1 &2077872803
 GameObject:
@@ -5556,7 +5560,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8238344560238757603, guid: 550e8b8efde50424e8b3b6509ff16b2a, type: 3}
   m_PrefabInstance: {fileID: 2031762844}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2126106712
+--- !u!114 &2126106708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
