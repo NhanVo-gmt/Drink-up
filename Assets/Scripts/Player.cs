@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using static DrinkStation;
 
 public class Player : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] private DrinkMovement Cocktailprefab;
     [SerializeField] private DrinkMovement SelectedDrinkPrefab;
     [SerializeField] private Transform spawnDrinkPos;
-
+    public DrinkMenu CurrentDrink = DrinkMenu.None;
     void Start()
     {
         SelectedDrinkPrefab = MilkshakePrefab;
@@ -64,15 +65,19 @@ public class Player : MonoBehaviour
             {
                 case DrinkStation.DrinkMenu.Milkshake:
                     SelectedDrinkPrefab = MilkshakePrefab;
+                    CurrentDrink = DrinkMenu.Milkshake;
                     break;
                 case DrinkStation.DrinkMenu.Smoothie:
                     SelectedDrinkPrefab = SmoothiePrefab;
+                    CurrentDrink = DrinkMenu.Smoothie;
                     break;
                 case DrinkStation.DrinkMenu.Beer:
                     SelectedDrinkPrefab = BeerPrefab;
+                    CurrentDrink = DrinkMenu.Beer;
                     break;
                 case DrinkStation.DrinkMenu.Cocktail:
                     SelectedDrinkPrefab = Cocktailprefab;
+                    CurrentDrink = DrinkMenu.Cocktail;
                     break;
                 case DrinkStation.DrinkMenu.None:
                     break;

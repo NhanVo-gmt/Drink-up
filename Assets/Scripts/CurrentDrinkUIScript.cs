@@ -5,26 +5,28 @@ using UnityEngine.UI;
 
 public class CurrentDrinkUIScript : MonoBehaviour
 {
-    public Image Milkshake;
+    public Image Milkshake; 
     [SerializeField] public Sprite Milkshake1;
     [SerializeField] public Sprite Smoothie;
     [SerializeField] public Sprite Beer;
     [SerializeField] public Sprite Cocktail;
-     private DrinkStation m_DrinkStation;
+
+   
+     private Player m_player;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        m_DrinkStation = GameObject.FindGameObjectWithTag("Player").GetComponent<DrinkStation>();
+        m_player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (m_DrinkStation != null)
+        if (m_player != null)
         {
-            // Access the CurrentDrink variable from DrinkStation
-            DrinkStation.DrinkMenu selectedItem = m_DrinkStation.CurrentDrink;
+            DrinkStation.DrinkMenu selectedItem = m_player.CurrentDrink;        //This is listening to the Player script now
 
             switch (selectedItem)
             {
